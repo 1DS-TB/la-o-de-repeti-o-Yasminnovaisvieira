@@ -1,15 +1,17 @@
-# Peça ao usuário um número inteiro positivo e calcule seu fatorial usando um laço for ou while. Exemplo: 5! = 5 × 4 × 3 × 2 × 1 = 120.
+# Peça ao usuário um número inteiro positivo e calcule seu fatorial usando um laço for ou while.
 
-numero = int(input("Digite um número inteiro positivo: "))
+N = int(input("Digite um número inteiro positivo: "))
 
-if numero > 0:
+if N >= 0:
     fatorial = 1
-    numero_inicial = numero #Apenas para o print.
+    indice = 1
 
-    while numero > 0:
-        fatorial = fatorial * numero
-        numero = numero - 1
+    while indice <= N:
+        fatorial = fatorial * indice
+        indice += 1
+        print(fatorial)
 
-    print(f"O fatorial de {numero_inicial} é: {fatorial}")
-else:
+    print(f"O fatorial de {N} é: {fatorial}")
+
+elif N <= 0:
     print("INVALIDO")
