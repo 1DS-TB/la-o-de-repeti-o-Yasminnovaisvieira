@@ -128,8 +128,8 @@ while True:
                         else:
                             print("Cache Hit indisponível.")
 
-                    elif item == "5":  # NOVO - TELA AZUL
-                        tela_azul2_turnos = 2  # NOVO - TELA AZUL
+                    elif item == "5":
+                        tela_azul2_turnos = 2
                         print("J1 usou Tela Azul! Defesa de J2 zerada por 2 turnos.")
 
                     else:
