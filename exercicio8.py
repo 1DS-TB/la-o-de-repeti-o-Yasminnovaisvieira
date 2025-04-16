@@ -6,7 +6,7 @@ n = 1
 serie_harmonica = []
 soma = 0
 
-if divisor <= 0:
+if divisor < 0:
     print("INVALIDO")
     
 else:
