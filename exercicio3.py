@@ -1,8 +1,6 @@
 # Peça ao usuário um número e exiba sua tabuada de multiplicação de 1 a 10 usando um laço for.
 
-numero = float(input("Digite o número que deseja realizar a tabuada: "))
+numero = int(input("Digite um número para visualizar a sua tabuada de 1 a 10: "))
 
-for i in range(1,11):
-    resultado = numero * i
-
-    print(f"{numero} X {i} = {resultado:.2f}")
+for i in range(1, 11):
+    print(f"{numero} x {i} = {numero * i}")
