@@ -7,7 +7,7 @@ if N <= 0:
     print("INVALIDO")
 
 elif N == 1:
-    print("1 não é primo")
+    print("1 não eh primo")
 
 else:
     for i in range(1, N + 1):
@@ -15,7 +15,7 @@ else:
             divisores += 1
 
     if divisores == 2:
-        print(f"{N} é primo")
+        print(f"{N} eh primo")
 
     else:
-        print(f"{N} não é primo")
+        print(f"{N} não eh primo")
