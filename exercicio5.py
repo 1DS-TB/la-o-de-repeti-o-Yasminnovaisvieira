@@ -1,21 +1,17 @@
 # Peça ao usuário um número e verifique se ele é primo usando um laço. Um número primo é divisível apenas por 1 e por ele mesmo.
 
-N = int(input("Digite um número: "))
-divisores = 0
+num = int(input("Digite um número: "))
+divisor = 0
 
-if N <= 0:
+for i in range(1, num +1):
+    if num % i == 0 and num >= 1:
+        divisor +=1
+
+if divisor == 2:
+    print(f"{num} eh primo")
+    
+elif divisor <1:
     print("INVALIDO")
-
-elif N == 1:
-    print("1 não eh primo")
-
+    
 else:
-    for i in range(1, N + 1):
-        if N % i == 0:
-            divisores += 1
-
-    if divisores == 2:
-        print(f"{N} eh primo")
-
-    else:
-        print(f"{N} não eh primo")
+    print(f"{num} nao eh primo")
